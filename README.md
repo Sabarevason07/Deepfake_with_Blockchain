@@ -160,5 +160,3 @@ Contributions are most welcome! To contribute:
 ## License
 
 MIT License — see [LICENSE](LICENSE) for details.
-
-```
