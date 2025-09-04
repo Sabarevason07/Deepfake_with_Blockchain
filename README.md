@@ -162,17 +162,3 @@ Contributions are most welcome! To contribute:
 MIT License — see [LICENSE](LICENSE) for details.
 
 ```
-
----
-
-###  How to Apply This to GitHub
-
-1. Visit your GitHub link, which opens the “Create new file: README.md” interface.
-2. Paste the above Markdown content into the editor.
-3. Scroll down, provide a commit message (e.g., “Add README template”), and commit it to the `main` branch.
-
----
-
-Let me know if you’d like me to tailor specific sections — like frontend design details, detection model parameters, or blockchain network setup instructions. I’m happy to help fine-tune it!
-::contentReference[oaicite:0]{index=0}
-```
