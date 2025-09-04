@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <title>Deepfake Detection</title>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      margin-bottom: 40px; /* For the fixed footer */
+    }
+    .container {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .card {
+      border: 0;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .card-header {
+      background-color: #007bff;
+      border-radius: 15px 15px 0 0;
+      padding: 15px;
+    }
+    .card-title {
+      color: #ffffff;
+      font-size: 1.5rem;
+    }
+    .card-body {
+      padding: 15px;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border: 0;
+    }
+    footer {
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 5px 0;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Deepfake Detection AI with Blockchain</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h1 class="card-title">Deepfake Detection</h1>
+    </div>
+    <div class="card-body">
+      <!-- Display flash messages if any -->
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <div class="alert alert-warning" role="alert">
+            {% for message in messages %}
+              {{ message }}
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% endwith %}
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label for="customFile" class="form-label">Choose video file</label>
+          <input type="file" class="form-control" id="customFile" name="file" onchange="updateFileName()">
+          <div class="form-text">
+            Allowed formats: MP4, AVI, MOV, WMV, MKV, FLV, MPEG, 3GP, P4. Max size: 20 MB.
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Upload</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container text-center">
+    <p>&copy; Deepfake Detection</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function updateFileName() {
+    var input = document.getElementById("customFile");
+    if (input.files.length > 0) {
+      var fileName = input.files[0].name;
+      // Optionally update a sibling element with the file name, if desired.
+      // For example, you might create a span element to display the selected file name.
+      console.log("Selected file:", fileName);
+    }a<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+      <title>Deepfake Detection</title>
+      <style>
+        body {
+          background-color: #f8f9fa;
+          margin-bottom: 40px;
+        }
+        .container {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        .card {
+          border: 0;
+          border-radius: 15px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+          background-color: #007bff;
+          border-radius: 15px 15px 0 0;
+          padding: 15px;
+        }
+        .card-title {
+          color: #ffffff;
+          font-size: 1.5rem;
+        }
+        .card-body {
+          padding: 15px;
+        }
+        .btn-primary {
+          background-color: #007bff;
+          border: 0;
+        }
+        footer {
+          background-color: #343a40;
+          color: #ffffff;
+          padding: 5px 0;
+          width: 100%;
+          position: fixed;
+          bottom: 0;
+        }
+      </style>
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Guardian AI</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h1 class="card-title">Deepfake Detection</h1>
+        </div>
+        <div class="card-body">
+          {% with messages = get_flashed_messages() %}
+            {% if messages %}
+              <div class="alert alert-warning" role="alert">
+                {% for message in messages %}
+                  {{ message }}
+                {% endfor %}
+              </div>
+            {% endif %}
+          {% endwith %}
+          <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+              <label for="customFile" class="form-label">Choose video file</label>
+              <input type="file" class="form-control" id="customFile" name="file" onchange="updateFileName()">
+              <div class="form-text">
+                Allowed formats: MP4, AVI, MOV, WMV, MKV, FLV, MPEG, 3GP, P4. Max size: 20 MB.
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Upload</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container text-center">
+        <p>&copy; Deepfake Detection</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function updateFileName() {
+        var input = document.getElementById("customFile");
+        if (input.files.length > 0) {
+          var fileName = input.files[0].name;
+          console.log("Selected file:", fileName);
+        }
+      }
+    </script>
+    </body>
+    </html>
+    
+  }
+</script>
+
+</body>
+</html>
