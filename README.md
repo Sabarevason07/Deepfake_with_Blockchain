@@ -1,6 +1,3 @@
-I've drafted a **README.md** template tailored for your GitHub repository titled "Deepfake\_with\_Blockchain." You can paste this directly into the README editor at the URL you provided:
-
----
 
 ```markdown
 # Deepfake Detection with Blockchain
