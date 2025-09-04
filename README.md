@@ -45,39 +45,6 @@ This project provides an end-to-end pipeline to:
 
 ---
 
-## Repository Structure
-
-```
-
-Deepfake\_with\_Blockchain/
-│
-├── detection/
-│   ├── model.py
-│   ├── preprocess.py
-│   └── utils.py
-│
-├── blockchain/
-│   ├── contract.sol
-│   ├── deploy.py
-│   └── interact.py
-│
-├── web/
-│   ├── app.py
-│   ├── templates/
-│   └── static/
-│
-├── data/
-│   └── samples/
-│
-├── tests/
-│   └── test\_detection.py
-├── README.md
-└── requirements.txt
-
-````
-
----
-
 ## Setup Instructions
 
 1. **Clone the repo**  
